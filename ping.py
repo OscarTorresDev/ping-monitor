@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 MONITOR DE INTERNET DEFINITIVO - TU VERSIÓN FAVORITA
 Funciona en Windows · Linux · macOS · Docker
@@ -103,7 +102,7 @@ def hacer_ping():
         return ping
     return intentar_ping(HOST_SECUNDARIO)
 
-# ====== DURACIÓN BONITA ======
+# ====== DURACIÓN ======
 def formato_duracion(segundos):
     if segundos < 60:
         return f"{segundos} seg"
@@ -145,7 +144,7 @@ def tomar_pantallazo(inicio, fin):
     fig.savefig(nombre, dpi=200, bbox_inches='tight', facecolor=fig.get_facecolor())
     print(f"Pantallazo guardado: {nombre}")
 
-# ====== GRÁFICA (con tu letrero rojo que tanto te gusta) ======
+# ====== GRÁFICA (con tu letrero rojo) ======
 ax.set_title(f"Monitor Internet • {MI_IP_PUBLICA} ({MI_IP_LOCAL}) → 1.1.1.1", fontsize=14, color='cyan', pad=20)
 ax.set_xlabel("Hora", color='white')
 ax.set_ylabel("Latencia (ms)", color='white')
