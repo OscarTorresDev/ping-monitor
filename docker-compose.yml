@@ -1,0 +1,11 @@
+services:
+  monitor:
+    build: .
+    container_name: monitor-internet
+    volumes:
+      - ./output:/app/output
+    environment:
+      - DISPLAY=host.docker.internal:0
+    network_mode: host
+    stdin_open: true
+    tty: true
