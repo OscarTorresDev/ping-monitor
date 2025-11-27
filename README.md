@@ -1,4 +1,4 @@
-# Monitor de Internet Definitivo
+# Monitor de Internet
 
 Monitorea tu conexión en tiempo real con ping inteligente a 1.1.1.1 (Cloudflare preferido), detecta caídas, gráfica oscura épica y exporta a Excel.
 
